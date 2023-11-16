@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 50px;
+            padding: 60px;
+            background-image: url(Background.png);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .container{
+            height: 100%;
+            width: auto;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(35px);
+            -webkit-backdrop-filter: blur(35px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            justify-content: center;
+            align-items: center;
+
+        }
+        
+        header {
+            color: white;
+            font-weight: 800;
+            font-size: 3.5vw;
+            text-align: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .events-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px ;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        
+        .card {
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            
+        }
+
+        .card a {
+            display: block;
+            width: 100%;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            object-fit: cover;
+            padding: 1rem;
+            /* margin-bottom: 10px; */
+            /* padding: 20%; */
+
+        }
+
+        
+
+        .card .info {
+            padding: 15px;
+            flex-grow: 1;
+        } 
+       
+       
+
+        @media only screen and (max-width: 768px) {
+            .events-list {
+                grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            }
+        }
+        @media only screen and (max-width: 480px) {
+            .events-list {
+                grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            }
+        }
+        @media only screen and (max-width: 400px) {
+            .events-list {
+                grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+            }
+        }
+        @media only screen and (max-width: 360px) {
+            .events-list {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            }
+        }
